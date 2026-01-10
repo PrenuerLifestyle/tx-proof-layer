@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { trackBitcoinTx } from "../../src/trackBitcoinTx";
+import { trackBitcoinTx } from "../../../src/bitcoin/trackBitcoinTx";
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
