@@ -1,15 +1,23 @@
 {
   "name": "tx-proof-layer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bitcoin transaction proof portal",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "vercel-build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["bitcoin", "nextjs", "crypto", "proof"],
+  "author": "Betiang Josiah",
   "license": "ISC",
-  "type": "commonjs",
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "axios": "^1.13.2",
     "bitcoinjs-lib": "^7.0.1",
@@ -19,7 +27,10 @@
   },
   "devDependencies": {
     "@types/node": "^25.0.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
 }
+
